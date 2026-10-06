@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mruja Shah — Photography</title>
+<meta name="description" content="Photography portfolio of Mruja (@mrxja_photography) — sunsets, moons, wildlife, mountains and temples. Prints and digital downloads available.">
+<meta name="theme-color" content="#fffdfb">
+
+<!-- Social sharing -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="Mruja Shah — Photography">
+<meta property="og:description" content="Sunsets, moons, wildlife, mountains and temples. Prints and digital downloads available.">
+<meta property="og:image" content="images/sunset/sunset-1.jpeg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Mruja Shah — Photography">
+<meta name="twitter:description" content="Sunsets, moons, wildlife, mountains and temples.">
+<meta name="twitter:image" content="images/sunset/sunset-1.jpeg">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Mruja Shah",
+  "jobTitle": "Photographer",
+  "email": "mailto:mruja.v.shah@gmail.com",
+  "sameAs": ["https://www.instagram.com/mrxja_photography"],
+  "image": "images/sunset/sunset-1.jpeg"
+}
+</script>
+
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<a class="skip" href="#work">Skip to work</a>
+
+<nav>
+  <strong>Mruja Shah</strong>
+  <div class="nav-links">
+    <a href="#work">Work</a>
+    <a href="#shop">Shop</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+    <button type="button" class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode">◐</button>
+  </div>
+</nav>
+
+<header class="hero">
+  <small>Photography</small>
+  <h1>Light, frames &amp; small moments.</h1>
+  <p>Sunsets, moons, wildlife, mountains and temples.</p>
+  <a class="btn" href="#work">View work</a>
+</header>
+
+<section id="work">
+  <div class="work-head">
+    <h2>Selected work</h2>
+    <label class="search">
+      <span class="sr-only">Search photos</span>
+      <input type="search" id="search" placeholder="Search photos…" autocomplete="off">
+    </label>
+  </div>
+  <div class="chips" id="chips" role="group" aria-label="Filter by genre"></div>
+  <div class="grid" id="grid"></div>
+  <p class="empty" id="empty" hidden>No photos match your search.</p>
+</section>
+
+<section id="shop">
+  <h2>Shop</h2>
+  <p class="shop-note">Choose a photo and a format, then buy it right away — or add a few to your shortlist and send one message. Either way it opens WhatsApp with your order filled in, and I'll confirm details and payment there.</p>
+
+  <div class="shop-wrap">
+    <div>
+      <h3 class="step">1. Choose a photo</h3>
+      <div class="chips small" id="shop-chips" role="group" aria-label="Filter shop by genre"></div>
+      <div class="picker" id="picker"></div>
+    </div>
+
+    <div class="order" aria-live="polite">
+      <h3 class="step">2. Choose a format</h3>
+      <div class="order-wm">
+        <img id="order-img" alt="" hidden>
+        <span class="wm" id="order-wm" hidden>© Mruja Shah</span>
+      </div>
+      <p class="order-title" id="order-title">Pick a photo to begin.</p>
+
+      <label class="opt"><input type="radio" name="fmt" value="digital" disabled><b>Digital download</b><span id="p-digital"></span></label>
+      <label class="opt alt"><input type="radio" name="fmt" value="print" disabled><b>Framed print</b><span id="p-print"></span></label>
+
+      <label class="size-row" id="size-row" hidden>
+        Print size
+        <select id="size" disabled>
+          <option>A4</option><option>A3</option><option>A2</option>
+        </select>
+      </label>
+
+      <div class="order-actions">
+        <button type="button" class="buy-btn" id="buy" aria-disabled="true">Choose a photo and format</button>
+        <button type="button" class="add-btn" id="add" disabled>Add to shortlist</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="cart" id="cart" aria-live="polite">
+    <div class="cart-head">
+      <h3 class="step">Your shortlist <span class="cart-count" id="cart-count">0</span></h3>
+      <button type="button" class="cart-clear" id="cart-clear" hidden>Clear</button>
+    </div>
+    <ul class="cart-list" id="cart-list"></ul>
+    <p class="cart-empty" id="cart-empty">Nothing here yet — add a few photos above.</p>
+    <div class="cart-foot" id="cart-foot" hidden>
+      <span>Total <b id="cart-total">₹0</b></span>
+      <a class="buy-btn" id="cart-send" href="#" target="_blank" rel="noopener">Send order on WhatsApp</a>
+    </div>
+  </div>
+</section>
+
+<section id="about">
+  <h2>About</h2>
+  <div class="about">
+    <p>Hi, I'm Mruja. I photograph what catches my eye: skies, wildlife, mountains and old temples.</p>
+    <p><em>&ldquo;Life is what happens when you are too busy making plans.&rdquo;</em></p>
+  </div>
+</section>
+
+<!-- Testimonials — edit the quotes here -->
+<section id="testimonials">
+  <h2>Kind words</h2>
+  <div class="quotes">
+    <blockquote class="quote">
+      <p>“The print arrived beautifully wrapped and the colours are exactly like the photos online.”</p>
+      <cite>— A happy collector</cite>
+    </blockquote>
+    <blockquote class="quote">
+      <p>“Mruja has an eye for the quiet moment. The sunset series is on our living room wall.”</p>
+      <cite>— Print buyer</cite>
+    </blockquote>
+    <blockquote class="quote">
+      <p>“Easy to order on WhatsApp and quick to reply. Would buy again.”</p>
+      <cite>— A happy collector</cite>
+    </blockquote>
+  </div>
+</section>
+
+<!-- Booking / enquiry form — sends through WhatsApp, no backend needed -->
+<section id="booking">
+  <h2>Work with me</h2>
+  <p class="shop-note">Planning a shoot or want a custom print? Tell me a little and I'll get back to you.</p>
+  <form class="booking" id="booking-form" novalidate>
+    <div class="field">
+      <label for="b-name">Your name</label>
+      <input type="text" id="b-name" name="name" required>
+    </div>
+    <div class="field">
+      <label for="b-type">What do you need?</label>
+      <select id="b-type" name="type">
+        <option>A shoot</option>
+        <option>A custom print</option>
+        <option>Licensing a photo</option>
+        <option>Something else</option>
+      </select>
+    </div>
+    <div class="field">
+      <label for="b-date">Preferred date</label>
+      <input type="date" id="b-date" name="date">
+    </div>
+    <div class="field">
+      <label for="b-place">Location</label>
+      <input type="text" id="b-place" name="place" placeholder="City or venue">
+    </div>
+    <div class="field wide">
+      <label for="b-msg">Message</label>
+      <textarea id="b-msg" name="message" rows="3" placeholder="Tell me what you have in mind…"></textarea>
+    </div>
+    <button type="submit" class="buy-btn">Send on WhatsApp</button>
+    <p class="form-note" id="form-note">Or email <a href="mailto:mruja.v.shah@gmail.com">mruja.v.shah@gmail.com</a>.</p>
+  </form>
+</section>
+
+<section id="follow">
+  <h2>Follow along</h2>
+  <p class="shop-note">New work goes up on Instagram first — <a href="https://www.instagram.com/mrxja_photography" target="_blank" rel="noopener">@mrxja_photography</a>.</p>
+  <div class="follow-strip" id="follow-strip"></div>
+</section>
+
+<section id="contact">
+  <h2>Contact</h2>
+  <ul class="contact-list">
+    <li><span>Email</span><a href="mailto:mruja.v.shah@gmail.com">mruja.v.shah@gmail.com</a></li>
+    <li><span>WhatsApp</span><a href="https://wa.me/919686038031" target="_blank" rel="noopener">9686038031</a></li>
+    <li><span>Instagram</span><a href="https://www.instagram.com/mrxja_photography" target="_blank" rel="noopener">@mrxja_photography</a></li>
+  </ul>
+</section>
+
+<footer><span>© 2026 Mruja Shah</span><span>Photography</span></footer>
+
+<!-- Lightbox viewer -->
+<div class="lightbox" id="lb" role="dialog" aria-modal="true" aria-label="Photo viewer" hidden>
+  <button type="button" class="lb-close" id="lb-close" aria-label="Close viewer">×</button>
+  <button type="button" class="lb-nav lb-prev" id="lb-prev" aria-label="Previous photo">‹</button>
+  <button type="button" class="lb-nav lb-next" id="lb-next" aria-label="Next photo">›</button>
+  <figure class="lb-figure">
+    <img id="lb-img" alt="">
+    <figcaption class="lb-cap">
+      <span id="lb-title"></span>
+      <span class="lb-count" id="lb-count"></span>
+    </figcaption>
+  </figure>
+  <div class="lb-tools">
+    <button type="button" class="lb-tool" id="lb-zoom" aria-label="Zoom in">＋</button>
+    <button type="button" class="lb-tool" id="lb-share">Share</button>
+  </div>
+</div>
+
+<button type="button" id="to-top" aria-label="Back to top" hidden>↑</button>
+<a class="wa-float" id="wa-float" href="https://wa.me/919686038031" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">Chat</a>
+
+<script src="script.js"></script>
+</body>
+</html>

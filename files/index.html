@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mruja Shah — Photography</title>
+<meta name="description" content="Photography portfolio of Mruja (@mrxja_photography)">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<nav><strong>Mruja Shah</strong><div><a href="#work">Work</a><a href="#shop">Shop</a><a href="#about">About</a><a href="#contact">Contact</a></div></nav>
+
+<header class="hero">
+  <small>Photography</small>
+  <h1>Light, frames &amp; small moments.</h1>
+  <p>Sunsets, moons, wildlife, mountains and temples.</p>
+  <a class="btn" href="#work">View work</a>
+</header>
+
+<section id="work">
+  <h2>Selected work</h2>
+  <div class="grid" id="grid"></div>
+</section>
+
+<section id="shop">
+  <h2>Shop</h2>
+  <p class="shop-note">Want one of these photos? Choose it, choose a format, then tap Buy. It opens WhatsApp with your order filled in, and I'll confirm details and payment there.</p>
+  <div class="shop-wrap">
+    <div>
+      <h3 class="step">1. Choose a photo</h3>
+      <div class="picker" id="picker"></div>
+    </div>
+    <div class="order" aria-live="polite">
+      <h3 class="step">2. Choose a format</h3>
+      <div class="order-wm"><img id="order-img" alt="" hidden></div>
+      <p class="order-title" id="order-title">Pick a photo to begin.</p>
+      <label class="opt"><input type="radio" name="fmt" value="digital" disabled><b>Digital download</b><span id="p-digital"></span></label>
+      <label class="opt alt"><input type="radio" name="fmt" value="print" disabled><b>Framed print</b><span id="p-print"></span></label>
+      <a class="buy-btn" id="buy" aria-disabled="true">Choose a photo and format</a>
+    </div>
+  </div>
+</section>
+
+<section id="about">
+  <h2>About</h2>
+  <div class="about">
+    <p>Hi, I'm Mruja. I photograph what catches my eye: skies, wildlife, mountains and old temples.</p>
+    <p><em>&ldquo;Life is what happens when you are too busy making plans.&rdquo;</em></p>
+  </div>
+</section>
+
+<section id="contact">
+  <h2>Contact</h2>
+  <ul class="contact-list">
+    <li><span>Email</span><a href="mailto:mruja.v.shah@gmail.com">mruja.v.shah@gmail.com</a></li>
+    <li><span>WhatsApp</span><a href="https://wa.me/919686038031" target="_blank" rel="noopener">9686038031</a></li>
+    <li><span>Instagram</span><a href="https://www.instagram.com/mrxja_photography" target="_blank" rel="noopener">@mrxja_photography</a></li>
+  </ul>
+</section>
+
+<footer><span>© 2026 Mruja Shah</span><span>Photography</span></footer>
+
+<div class="lightbox" id="lb"><img alt=""></div>
+<script src="script.js"></script>
+</body>
+</html>
